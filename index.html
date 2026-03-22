@@ -45,9 +45,9 @@
                 <button class="ghost-btn" id="editProfile"><i class="fa-solid fa-pen-to-square"></i></button>
             </div>
             <div class="home-title">
-                <span class="home-tag">— typing game</span>
+                <span class="home-tag">-- typing game</span>
                 <h1 class="mega-title"><span class="accent">Type</span><br>Ballad</h1>
-                <p class="home-desc">30 levels. every keystroke matters.<br>drop a track. feel the rhythm.</p>
+                <p class="home-desc">90 levels. every keystroke matters.<br>drop a track. feel the rhythm.</p>
             </div>
             <button class="btn-pill primary large" id="enter">Play <i class="fa-solid fa-play"></i></button>
         </div>
@@ -56,7 +56,7 @@
                 <div class="deco-ring r1"></div>
                 <div class="deco-ring r2"></div>
                 <div class="deco-ring r3"></div>
-                <div class="deco-text">30<br><span>levels</span></div>
+                <div class="deco-text">90<br><span>levels</span></div>
             </div>
         </div>
     </div>
@@ -82,12 +82,16 @@
     <div class="glass-card narrow pregame-card">
         <button class="ghost-btn back-float" id="preGameBack"><i class="fa-solid fa-arrow-left"></i></button>
         <h2 id="preGameTitle">Level 1</h2>
-        <p class="sub" id="preGameSub">Drop a track to play to the beat</p>
+        <p class="sub" id="preGameSub">Drop a track to shape this level</p>
         <div class="drop-zone" id="dropZone">
             <i class="fa-solid fa-music drop-icon"></i>
-            <span id="dropLabel">drag & drop an MP3</span>
+            <span id="dropLabel">drag &amp; drop an MP3</span>
             <span class="drop-hint">or click to browse</span>
             <input type="file" id="fileInput" accept=".mp3,audio/*"/>
+        </div>
+        <div id="songInfoRow" class="song-info-row">
+            <i class="fa-solid fa-waveform-lines"></i>
+            <span id="songInfoText"></span>
         </div>
         <div class="pregame-btns">
             <button class="btn-pill ghost" id="skipMusic">Skip</button>
@@ -128,6 +132,9 @@
         </div>
         <div class="caret" id="caret"></div>
         <div class="wpm-live"><span id="liveWpm">0</span> <span class="wpm-label">wpm</span></div>
+        <div class="progress-bar-wrap">
+            <div class="progress-bar-fill" id="progressFill"></div>
+        </div>
     </div>
 
     <div id="floatingScores"></div>
